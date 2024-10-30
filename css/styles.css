@@ -294,7 +294,7 @@ footer {
 @media screen and (max-width: 768px) {
   #About-home {
     display: flex;
-    padding: 3rem 6vw;
+    padding: 8vh 6vw;
     align-items: center;
     justify-content: center;
     height: auto;

@@ -828,12 +828,21 @@ header {
 .hero-item {
   background: linear-gradient(
     180deg,
-    rgb(0 0 0 / 40%) 0%,
-    rgb(0 0 0 / 25%) 40%,
+    rgb(0 0 0 / 45%) 0%,
+    rgb(0 0 0 / 0%) 15%,
     rgb(0 0 0 / 0%) 100%
   ) !important;
 }
 #carouselExampleCaptions .caraousel-item-img {
   z-index: -1;
   position: relative;
+}
+#carouselExampleCaptions .overlay-head {
+  background: linear-gradient(
+    180deg,
+    rgb(0 0 0 / 45%) 0%,
+    rgb(0 0 0 / 0%) 15%,
+    rgb(0 0 0 / 0%) 100%
+  ) !important;
+  z-index: auto;
 }

@@ -246,7 +246,7 @@ footer {
     padding: 1rem;
     right: 5%;
     left: 5%;
-    top: 14%;
+    top: 18%;
     background-color: rgba(var(--brandBrownV), 0.2);
     backdrop-filter: blur(2px);
   }

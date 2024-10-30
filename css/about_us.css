@@ -1,0 +1,151 @@
+/* About-Page start */
+#About_us_page p {
+  font-size: 18px;
+  line-height: 27px;
+}
+.side-margin {
+  padding-left: 12vw;
+  padding-right: 12vw;
+}
+.section-gap {
+  padding-bottom: 5rem;
+}
+#About-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+#About-hero img {
+  width: 40vw;
+}
+.about-hero-info h1 {
+  color: var(--brandGold);
+}
+.about-hero-info h3 {
+  color: var(--medBrown);
+  font-family: var(--body-font);
+  padding-bottom: 1rem;
+}
+.about-hero-info p {
+  padding-top: 1rem;
+}
+
+#About-Us {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+#About-Us img {
+  width: 30vw;
+  object-fit: cover;
+}
+.about-us-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 2rem;
+  justify-content: center;
+}
+#Vision {
+  text-align: center;
+}
+#Vision p {
+  padding-top: 2rem;
+}
+.emotion {
+  width: 100%;
+}
+#About-collab {
+  text-align: center;
+}
+#About-collab p {
+  padding-top: 2rem;
+  max-width: 80ch;
+}
+.about-collab-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-collab-imgs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0 2rem 0;
+  gap: 2rem;
+}
+.about-collab-imgs img {
+  max-width: 200px;
+  max-height: 200px;
+}
+.about-collab-imgs img:nth-child(1) {
+  max-width: 250px;
+  min-width: 200px;
+}
+.about-collab-imgs img:nth-child(2) {
+  max-width: 150px;
+}
+.quote-wrapper {
+  max-height: 100%;
+  background-image: url(../assets/1-a.webp);
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.quote-info {
+  display: flex;
+  margin: 12vw;
+  padding: 2rem;
+  background-color: rgba(var(--brandBrownV), 0.6);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+#About-quote .quote {
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+@media screen and (max-width: 768px) {
+  #About-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  #About-hero img {
+    width: 80vw;
+  }
+  #About-Us {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  #About-Us img {
+    width: 80vw;
+  }
+  .about-us-info {
+    text-align: center;
+  }
+  .side-margin {
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+  .section-gap {
+    padding-bottom: 3rem;
+  }
+  .about-collab-imgs {
+    flex-direction: column;
+    padding: 3rem 0 1rem 0;
+  }
+  .quote-info {
+    margin: 6vw;
+    padding: 1rem;
+  }
+}

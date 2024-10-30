@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Icon Fresco, Ambience Enriched. Explore our variety of premium finishes.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans&display=swap"
+    rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon_io/apple-touch-icon.webp" />
+  <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon_io/favicon-32x32.webp" />
+  <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon_io/favicon-16x16.webp" />
+  <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
+  <link rel="manifest" href="Images/favicon_io/site.webmanifest" />
+
+  <script src="https://kit.fontawesome.com/dc4cb3ac1f.js" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/finishes.css" />
+  <script src="js/script.js" defer></script>
+
+
+  <title>Finishes</title>
+</head>
+
+<body>
+  <header class="text-white fixed-top" style="background-color: white;" data-bs-theme="light">
+    <nav class="navbar navbar-expand-md" style="    border-bottom: 1px solid rgba(242, 233, 233, 0.6);">
+      <div class="container-fluid bg">
+        <a href="index.html"><img src="Images/logo/Icon_Fresco_logo-wot.webp" alt="logo" class="logo"></a>
+        <a class="navbar-brand fw-bold" href="index.html">ICON FRESCO</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Icon Fresco
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1">
+              <li class="nav-item nav-i">
+                <a class="nav-link five" aria-current="page" href="index.html">Home<i
+                    class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li class="nav-item nav-i ">
+                <a class="nav-link  five" href="about_us.html">About<i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li class="nav-item nav-i">
+                <a class="nav-link  active  five" href="finishes.html">Finishes<i
+                    class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li class="nav-item nav-i">
+                <a class="nav-link five" href="collaborate.html">Collaborate<i
+                    class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li class="nav-item nav-i">
+                <a class="nav-link five" href="contact.html">Contact<i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+            </ul>
+            <!-- <div><a href="enroll.html" class="btn c2 nav-btn" target="_blank" role="link" aria-label="Enroll Now">Brochure</a> </div> -->
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <div id="Finishes">
+    <!-- Images Filter Buttons Section -->
+    <div id="filter-buttons" class="">
+      <button class="gallery-tabs five active ctmhidden" style="--order:1;" data-filter="all" title="All">All</button>
+      <button class="gallery-tabs five ctmhidden" style="--order:3;" data-filter="Interior"
+        title="Interior">Interior</button>
+      <button class="gallery-tabs  five  ctmhidden" style="--order:5;" data-filter="Exterior"
+        title="Exterior">Exterior</button>
+      <button class="gallery-tabs five  ctmhidden" style="--order:7;" data-filter="Flooring"
+        title="Flooring">Flooring</button>
+    </div>
+    <!-- Filterable Images / Cards Section -->
+    <div class="gallery" id="filterable-cards">
+
+      <figure class="finish ctmhidden" style="--order:1;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(1)">
+        <img src="Images/Finishes/Interior/1calce&clay/Scultura6-h.webp" alt="Calce & Clay img">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title" id="calce1">Calce & Clay</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+
+      <figure class="finish ctmhidden" style="--order:3;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(2)">
+        <img src="Images/Finishes/Interior/2STUCCOMARMO/STUCCO1-c.webp" alt="Stuccomarmo img">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">Stuccomarmo</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+
+      <figure class="finish ctmhidden" style="--order:5;" data-name="Exterior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(3)">
+        <img src="Images/Finishes/Exterior/3Perfecto Encausto/perfectoesterno2.webp" alt="Perfecto Encausto img">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">Perfecto Encausto</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:7;" data-name="Flooring" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(4)">
+        <img src="Images/Finishes/Flooring/4Micro Marmo Flooring/MicroMarmo_1.webp" alt="Micro Marmo Flooring img">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">Micro Marmo Flooring</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:9;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(5)">
+        <img src="Images/Finishes/Interior/5Ardore/Ardore4-c.webp" alt="Adore img">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">Adore</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:11;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(6)">
+        <img src="Images/Finishes/Interior/6XXGloss/XXGloss2-h.webp" alt="XXGloss img">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">XXGloss</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:1;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(7)">
+        <img src="Images/Finishes/Interior/7Encausto/encausto2-c.webp" alt="Encausto img" loading="lazy">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">Encausto</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:3;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(8)">
+        <img src="Images/Finishes/Interior/8nobilis/nobilis3-c.webp" alt="Nobilis img" loading="lazy">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">Nobilis</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:5;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(9)">
+        <img src="Images/Finishes/Interior/9MARMOPERLA/1-c.webp" alt="MARMOPERLA img" loading="lazy">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">MARMOPERLA</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:7;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(10)">
+        <img src="Images/Finishes/Interior/10CaravaggioPearl/CaravaggioPearl2-c.webp" alt="Caravaggio Pearl img"
+          loading="lazy">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">Caravaggio Pearl</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:9;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(11)">
+        <img src="Images/Finishes/Interior/11MARMOPACO/Marmopaco5-cropped-c.webp" alt="MARMOPACO img" loading="lazy">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">MARMOPACO</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:11;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(12)">
+        <img src="Images/Finishes/Interior/12Feel/6-c.webp" alt="Feel img" loading="lazy">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">Feel</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:1;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(13)">
+        <img src="Images/Finishes/Interior/13Arthe Metal/ArtheMetal1-c.webp" alt="Arthe Metal img" loading="lazy">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">Arthe Metal</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:3;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(14)">
+        <img src="Images/Finishes/Interior/14Krystalia/Krystaia2-c.webp" alt="Krystalia img" loading="lazy">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">Krystalia</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:5;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(15)">
+        <img src="Images/Finishes/Interior/15Rust Style Light/RustStyleLightG-c.webp" alt="Rust Style Light img">
+        <figcaption class="card-body" loading="lazy">
+          <div class="card-info">
+            <h4 class="card-title">Rust Style Light</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:7;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(16)">
+        <img src="Images/Finishes/Interior/16OxyD_Arthe/_DSC9419-c.webp" alt="OxyD Arthe img" loading="lazy">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">OxyD Arthe</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:9;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(17)">
+        <img src="Images/Finishes/Interior/17rust style/rust3-c.webp" alt="Rust Style img">
+        <figcaption class="card-body" loading="lazy">
+          <div class="card-info">
+            <h4 class="card-title">Rust Style</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:11;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(18)">
+        <img src="Images/Finishes/Interior/18velaturaclassica/velatura1-c.webp" alt="Velatura Classica img">
+        <figcaption class="card-body" loading="lazy">
+          <div class="card-info">
+            <h4 class="card-title">Velatura Classica</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:1;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(19)">
+        <img src="Images/Finishes/Interior/19zephyro/ZE4-c.webp" alt="Zephyro img" loading="lazy">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">Zephyro</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:3;" data-name="Interior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(20)">
+        <img src="Images/Finishes/Interior/20Decorà/Gold/decoragold1-c.webp" alt="Decorà img" loading="lazy">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">Decorà</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+      <figure class="finish ctmhidden" style="--order:5;" data-name="Exterior" data-bs-toggle="modal"
+        data-bs-target="#carouselModal" onclick="updateModal(21)">
+        <img src="Images/Finishes/Exterior/4Perfecto Stucco/PerfectoEsterno.webp" alt="Perfecto Stucco img"
+          loading="lazy">
+        <figcaption class="card-body">
+          <div class="card-info">
+            <h4 class="card-title">Perfecto Stucco</h4>
+            <!-- <p class="card-text">Lorem ipsum dolor..</p> -->
+          </div>
+        </figcaption>
+
+      </figure>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="carouselModal" tabindex="-1" aria-labelledby="carouselModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <!-- Slideshow/Carousel (larger on bigger screens) -->
+              <div class="col-md-6 carousel-container">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner" id="carousel-inner">
+                    <div class="carousel-item active" id="carousel-item-1">
+                      <img src="Images/Finishes/Interior/1calce&clay/Scultura6-h.webp" class="d-block w-100"
+                        id="modal-image-1" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item" id="carousel-item-2">
+                      <img src="Images/Finishes/Interior/1calce&clay/2.webp" class="d-block w-100" id="modal-image-2"
+                        alt="Slide 2">
+                    </div>
+                    <div class="carousel-item" id="carousel-item-3">
+                      <img src="Images/Finishes/Interior/1calce&clay/8.webp" class="d-block w-100" id="modal-image-3"
+                        alt="Slide 3">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Information Section (takes less space on larger screens) -->
+              <div class="col-md-6 info-container d-flex align-items-center justify-content-center">
+                <div id="info-section">
+                  <h2>Information Section</h2>
+                  <p>
+                    An original effect , characterized by a false depth between pearly and opaque. Exclusive fragments
+                    of precious pearls that, softly caressed and pressed during the processing, leave a pearlescent
+                    trail on the surface , which smells of warmth and three- dimensionality.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer id="Contact">
+    <div class="rowM">
+      <div class="colM">
+        <img src="assets/Icon Fresco-footer.webp" class="logoimg" alt="Icon Fresco Logo" />
+        <!-- <h2>ICON FRESCO</h2> -->
+
+      </div>
+
+      <div class="colM">
+        <h3>Address</h3>
+        <p>16-3-991/1/G,</p>
+        <p>Icon Fresco,</p>
+        <p>Sai Avenue, 198 & 199,</p>
+        <p>Srinagar Colony Main Rd,</p>
+        <p>Above Hyderabad Hardware,</p>
+        <p>Sri Nagar Colony,</p>
+        <p>Kamalapuri Colony, Banjara Hills,</p>
+        <p>Hyderabad, Telangana - 500073</p>
+        <p>India.</p>
+      </div>
+
+      <div class="colM">
+        <h3>Contact</h3>
+        <p>+91 81218 19028</p>
+        <p>+92 90145 13393</p>
+        <h3>Email</h3>
+        <p>contact@iconfresco.com</p>
+
+        <h3>Other Platforms</h3>
+        <div class="icons">
+          <a href="http://wa.me/message/RL6XXGXDNXHUO1" title="Whatsapp Chat" target="_blank"
+            rel="noopener noreferrer"><i class="fa-brands fa-square-whatsapp"></i></a>
+          <a href="https://www.instagram.com/iconfresco/profilecard/?igsh=dWFvaDJlMDN6eWYx" title="Instagram Page"
+            target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://x.com/IconFresco" title="X/Twitter Page" target="_blank" rel="noopener noreferrer"><i
+              class="fa-brands fa-square-x-twitter"></i> </a>
+          <a href="https://pin.it/5mnfeEfLQ" title="Pinterest Page" target="_blank" rel="noopener noreferrer"><i
+              class="fa-brands fa-square-pinterest"></i></a>
+          <!-- <i class="fa-brands fa-square-pinterest"></i> -->
+          <a href="https://www.facebook.com/profile.php?id=61567157051297" title="Facebook Page" target="_blank"
+            rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
+          <!-- <i class="fa-brands fa-square-facebook"></i> -->
+          <a href="https://www.youtube.com/@iconfrescoworks" title="Youtube Page" target="_blank"
+            rel="noopener noreferrer"><i class="fa-brands fa-square-youtube"></i></a>
+          <a href="" title="LinkedIn Page" target="_blank" rel="noopener noreferrer"><i
+              class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="colM">
+        <h3>Location</h3>
+        <section class="location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15226.468389426362!2d78.4305596!3d17.4301539!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9189ee021c0f%3A0xc17e6fabee7825de!2sICON%20FRESCO!5e0!3m2!1sen!2sin!4v1729683576634!5m2!1sen!2sin"
+            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="googlemaps location"></iframe>
+        </section>
+
+      </div>
+    </div>
+    <div class="copyright">
+      <p class="credits">
+        © 2024 All Rights Reserved | Icon Fresco Pvt. Ltd. |
+        <a class="credit" href="https://www.linkedin.com/in/sana-marwa-23b4551b5/" target="_blank"><span>Website by
+            Sana</span></a>
+      </p>
+    </div>
+  </footer>
+
+
+  </main>
+  <script src="js/finishes.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+    defer></script>
+
+</body>
+
+</html>

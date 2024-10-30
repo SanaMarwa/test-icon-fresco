@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Icon Fresco, Ambience Enriched. Inviting Contractors and Distributors for collaboration.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans&display=swap"
+    rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon_io/apple-touch-icon.webp" />
+  <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon_io/favicon-32x32.webp" />
+  <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon_io/favicon-16x16.webp" />
+  <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
+  <link rel="manifest" href="Images/favicon_io/site.webmanifest" />
+
+  <script src="https://kit.fontawesome.com/dc4cb3ac1f.js" crossorigin="anonymous" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/collaborate.css" />
+  <script src="js/script.js" defer></script>
+
+  <link rel="preload" href="Images/contractor.webp" src="Images/contractor.webp" as="image" type="image/webp" />
+
+  <title>Collaborate</title>
+</head>
+
+<body>
+  <main>
+    <header class="text-white fixed-top" style="background-color: white;" data-bs-theme="light">
+      <nav class="navbar navbar-expand-md" style="    border-bottom: 1px solid rgba(242, 233, 233, 0.6);">
+        <div class="container-fluid bg">
+          <a href="index.html"><img src="Images/logo/Icon_Fresco_logo-wot.webp" alt="logo" class="logo"></a>
+          <a class="navbar-brand fw-bold" href="index.html">ICON FRESCO</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Icon Fresco
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1">
+                <li class="nav-item nav-i">
+                  <a class="nav-link five" aria-current="page" href="index.html">Home<i
+                      class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li class="nav-item nav-i ">
+                  <a class="nav-link  five" href="about_us.html">About<i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li class="nav-item nav-i">
+                  <a class="nav-link five" href="finishes.html">Finishes<i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li class="nav-item nav-i">
+                  <a class="nav-link active  five" href="collaborate.html">Collaborate<i
+                      class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li class="nav-item nav-i">
+                  <a class="nav-link five" href="contact.html">Contact<i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+              </ul>
+              <!-- <div><a href="enroll.html" class="btn c2 nav-btn" target="_blank" role="link" aria-label="Enroll Now">Brochure</a> </div> -->
+            </div>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <section id="Banner">
+      <h2 class=" ctmhidden" style="--order:1;">Interested in collaborating with us?</h2>
+      <p class=" ctmhidden" style="--order:1;">Contact us to explore partnership opportunities and start a journey of
+        success with Icon Fresco.</p>
+    </section>
+    <section id="Contractor" class="collab">
+      <div class="form">
+        <form id="join-form-contractor" method="post" action="" class="join-form ctmhidden" style="--order:1;">
+          <h3 class="mb-5">Certified Contractor Form</h3>
+          <input type="hidden" name="formType" value="Contractor" /> <!-- Hidden input for form type -->
+          <label for="fullName" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your Full Name"
+            required /><br />
+
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email ID"
+            required /><br />
+
+          <label for="phoneNo" class="form-label">Phone Number:</label>
+          <input type="tel" class="form-control" id="phoneNo" name="phoneNo" placeholder="Enter your Phone Number"
+            required /><br />
+
+          <label for="location" class="form-label">City, State</label>
+          <input type="text" class="form-control" id="location" name="location" placeholder="Hyderabad, Telangana"
+            required /><br />
+
+          <label for="message" class="form-label">Message:</label>
+          <textarea id="message" class="form-control" name="message" placeholder="Enter a message"
+            required></textarea><br /><br />
+
+          <button type="submit" class="custom-btn">Submit</button>
+        </form>
+      </div>
+      <div class="form-info">
+        <h2 class=" ctmhidden" style="--order:1;">Certified Surface Design Expert</h2>
+        <p class=" ctmhidden" style="--order:1;">Become a <b>certified contractor</b> with Icon Fresco and gain
+          exclusive access to our comprehensive surface
+          design training. Learn the art of applying luxury finishes with precision and elevate your craft to new
+          heights, ensuring the highest standards in every project you undertake.</p>
+      </div>
+    </section>
+
+    <section id="Distributor" class="collab">
+
+      <div class="form-info">
+        <h2 class=" ctmhidden" style="--order:1;">Authorised Distributor</h2>
+        <p class=" ctmhidden" style="--order:1;">Gain <b>exclusive distribution</b> rights with Icon Fresco and bring
+          our luxury finishes to your regional
+          market. As an authorized distributor, you'll have the unique opportunity to represent our premium products in
+          your region, driving growth and expanding our brand's reach.</p>
+      </div>
+      <div class="form">
+
+        <form id="join-form-distributor" method="post" action="" class="join-form ctmhidden" style="--order:1;">
+          <h3 class="mb-5">Authorised Distributor Form</h3>
+          <label for="fullName" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="fullName" name="fullName" required /><br />
+
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required /><br />
+
+          <label for="phoneNo" class="form-label">Phone Number:</label>
+          <input type="tel" class="form-control" id="phoneNo" name="phoneNo" required /><br />
+
+          <label for="location" class="form-label">City, State</label>
+          <input type="text" class="form-control" id="location" name="location" placeholder="Hyderabad, Telangana"
+            required /><br />
+
+          <label for="message" class="form-label">Message:</label>
+          <textarea id="message" class="form-control" name="message" required></textarea><br />
+
+          <button type="submit" class="custom-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+
+
+  </main>
+  <footer id="Contact">
+    <div class="rowM">
+      <div class="colM">
+        <img src="assets/Icon Fresco-footer.webp" class="logoimg" alt="Icon Fresco Logo" />
+        <!-- <h2>ICON FRESCO</h2> -->
+
+      </div>
+
+      <div class="colM">
+        <h3>Address</h3>
+        <p>16-3-991/1/G,</p>
+        <p>Icon Fresco,</p>
+        <p>Sai Avenue, 198 & 199,</p>
+        <p>Srinagar Colony Main Rd,</p>
+        <p>Above Hyderabad Hardware,</p>
+        <p>Sri Nagar Colony,</p>
+        <p>Kamalapuri Colony, Banjara Hills,</p>
+        <p>Hyderabad, Telangana - 500073</p>
+        <p>India.</p>
+      </div>
+
+      <div class="colM">
+        <h3>Contact</h3>
+        <p>+91 81218 19028</p>
+        <p>+92 90145 13393</p>
+        <h3>Email</h3>
+        <p>contact@iconfresco.com</p>
+
+        <h3>Other Platforms</h3>
+        <div class="icons">
+          <a href="http://wa.me/message/RL6XXGXDNXHUO1" title="Whatsapp Chat" target="_blank"
+            rel="noopener noreferrer"><i class="fa-brands fa-square-whatsapp"></i></a>
+          <a href="https://www.instagram.com/iconfresco/profilecard/?igsh=dWFvaDJlMDN6eWYx" title="Instagram Page"
+            target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://x.com/IconFresco" title="X/Twitter Page" target="_blank" rel="noopener noreferrer"><i
+              class="fa-brands fa-square-x-twitter"></i> </a>
+          <a href="https://pin.it/5mnfeEfLQ" title="Pinterest Page" target="_blank" rel="noopener noreferrer"><i
+              class="fa-brands fa-square-pinterest"></i></a>
+          <!-- <i class="fa-brands fa-square-pinterest"></i> -->
+          <a href="https://www.facebook.com/profile.php?id=61567157051297" title="Facebook Page" target="_blank"
+            rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
+          <!-- <i class="fa-brands fa-square-facebook"></i> -->
+          <a href="https://www.youtube.com/@iconfrescoworks" title="Youtube Page" target="_blank"
+            rel="noopener noreferrer"><i class="fa-brands fa-square-youtube"></i></a>
+          <a href="" title="LinkedIn Page" target="_blank" rel="noopener noreferrer"><i
+              class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="colM">
+        <h3>Location</h3>
+        <section class="location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15226.468389426362!2d78.4305596!3d17.4301539!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9189ee021c0f%3A0xc17e6fabee7825de!2sICON%20FRESCO!5e0!3m2!1sen!2sin!4v1729683576634!5m2!1sen!2sin"
+            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="googlemaps location"></iframe>
+        </section>
+
+      </div>
+    </div>
+    <div class="copyright">
+      <p class="credits">
+        © 2024 All Rights Reserved | Icon Fresco Pvt. Ltd. |
+        <a class="credit" href="https://www.linkedin.com/in/sana-marwa-23b4551b5/" target="_blank"><span>Website by
+            Sana</span></a>
+      </p>
+    </div>
+  </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+    defer></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script src="js/join_us.js"></script>
+</body>
+
+</html>

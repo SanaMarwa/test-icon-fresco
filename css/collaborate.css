@@ -1,0 +1,145 @@
+#Banner {
+  margin-top: 4.5rem;
+  background-color: var(--brandGold);
+  padding: 4rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#Banner p {
+  max-width: 60ch;
+  font-family: "Nunito Sans", sans-serif;
+}
+#Banner h2 {
+  letter-spacing: 1px;
+  color: white;
+}
+.collab {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5rem 14vw;
+  gap: 2rem;
+}
+#Contractor .form-info {
+  background: url(../Images/contractor.webp);
+}
+#Distributor .form-info {
+  background: url(../Images/distributor.webp);
+}
+.form {
+  padding: 2rem;
+  padding-right: 6rem;
+  background: url(../Images/form-frame.webp);
+}
+.form-info {
+  padding: 4rem;
+  padding-top: 6rem;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-info h2 {
+  letter-spacing: 0;
+}
+.form-info p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+}
+/* --------Contact page start----------- */
+#Customer {
+  margin: 8rem 0;
+  padding: 0 12vw;
+}
+#Customer p {
+  padding-top: 0.75rem;
+  font-size: 18px;
+  /* font-size: 16px; */
+}
+#Customer h2 {
+  font-family: var(--thin-title-font);
+}
+#Customer h2,
+#Customer h1 {
+  letter-spacing: 1px;
+}
+#Customer .form {
+  padding-left: 0;
+  padding-top: 0rem;
+  /* padding: 0 2rem 0 0; */
+  background: none;
+  padding: 0;
+  flex-basis: 30%;
+}
+.contact-grid {
+  justify-content: space-between;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+#Customer .row3 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#Customer h2:after {
+  background: none repeat scroll 0 0 var(--brandGold);
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 50px;
+}
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b3b3b3;
+  opacity: 1; /* Firefox */
+}
+#Customer .row2 iframe {
+  margin-top: 2rem;
+}
+/* --------------- Contact page end--------------- */
+@media screen and (max-width: 768px) {
+  #Contractor {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #Distributor {
+    display: flex;
+    flex-direction: column;
+  }
+  .collab {
+    margin: 2rem 6vw;
+  }
+  #Banner {
+    padding: 3rem 8vw;
+  }
+  .form-info {
+    padding: 3rem 1rem;
+  }
+  /* --------------- Contact page---------------  */
+  #Customer {
+    margin: 6rem 0 4rem;
+  }
+  .contact-grid {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  #Customer .row2 iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+.optional.form-label:after {
+  color: lightgrey;
+  content: "(Optional)";
+  position: absolute;
+  margin-left: 5px;
+  margin-bottom: -15px;
+
+  font-size: 16px;
+}

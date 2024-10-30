@@ -253,7 +253,7 @@ footer {
   .carousel-item picture,
   .carousel-item img {
     /* object-fit: none; */
-    height: 80vh !important;
+    height: 80dvh !important;
   }
   .carousel-caption h1 {
     font-size: calc(1.475rem + 2.7vw) !important;

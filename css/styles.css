@@ -417,7 +417,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   #Gallery-home {
-    padding: 12vw 6vw;
+    padding: 6vh 6vw;
   }
 }
 @media screen and (max-width: 426px) {

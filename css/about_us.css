@@ -1,6 +1,6 @@
 /* About-Page start */
 #About_us_page p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 27px;
 }
 .side-margin {
@@ -115,6 +115,9 @@
   padding-bottom: 1rem;
 }
 @media screen and (max-width: 768px) {
+  #About_us_page p {
+  font-size: 16px;
+  }
   #About-hero {
     flex-direction: column;
     text-align: center;

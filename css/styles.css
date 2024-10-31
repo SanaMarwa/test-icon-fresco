@@ -294,7 +294,7 @@ footer {
 @media screen and (max-width: 768px) {
   #About-home {
     display: flex;
-    padding: 6vh 6vw;
+    padding: 8vh 6vw 6vh;
     align-items: center;
     justify-content: center;
     height: auto;
@@ -417,7 +417,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   #Gallery-home {
-    padding: 6vh 6vw 12vh;
+    padding: 5vh 6vw 12vh;
   }
 }
 @media screen and (max-width: 426px) {
